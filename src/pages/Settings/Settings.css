@@ -1,0 +1,86 @@
+.bottom-settings {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 40px auto;
+  padding-inline: 20px;
+  column-gap: 60px;
+}
+.left-settings {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.left-settings a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+.left-settings .active-settings-link {
+  color: rgb(109 45 231);
+}
+.right-settings {
+  width: 100%;
+  padding: 2rem;
+  min-height: 400px;
+  border-radius: 10px;
+  background-color: #969696;
+  overflow-x: hidden;
+}
+.mob-icon {
+  display: none;
+}
+.set-overlay {
+  display: none;
+}
+@media screen and (max-width: 856px) {
+  .left-settings {
+    position: fixed;
+    height: 100vh;
+    left: -600px;
+    top: 0;
+    width: 343px;
+    background-color: black;
+    padding: 4rem 2rem;
+    z-index: 66;
+    transition: all 0.5s ease-in-out;
+  }
+  .left-settings-open {
+    left: 0;
+  }
+  .mob-icon {
+    display: block;
+    color: white;
+    font-size: 30px;
+  }
+  .left-settings .mob-icon {
+    position: absolute;
+    top: 2%;
+    right: 4%;
+  }
+  .set-overlay {
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 65;
+  }
+  .open-overlay {
+    display: block;
+  }
+  .bottom-settings {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    row-gap: 30px;
+  }
+}
+@media screen and (max-width: 414px) {
+  .right-settings {
+    padding: 2rem 1rem;
+  }
+}

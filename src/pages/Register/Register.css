@@ -1,0 +1,148 @@
+.register__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.register {
+  width: 100%;
+  max-width: 600px;
+}
+
+.register__top {
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.register__header {
+  background-color: #000000;
+  border-radius: 100vmax;
+  padding-inline: 2rem;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.register__logo {
+  width: 35px;
+}
+
+.register__logoGif {
+  width: 100%;
+}
+
+.register__headerCenter {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.register__signOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.register__signOption {
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.register__signOption > img {
+  width: 30px;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.register__facebook {
+  background-color: #4164a9;
+  color: white;
+}
+
+.register__twitter {
+  background-color: #1ca1f3;
+  color: white;
+}
+
+.register__google {
+  background-color: rgba(255, 255, 255, 255);
+  color: black;
+}
+
+.register__metamask {
+  background-color: rgba(255, 204, 0, 255);
+  color: black;
+}
+
+.register__trustwallet {
+  background-color: #007bff;
+  color: white;
+}
+
+.register__topText {
+  color: white;
+  margin-inline: auto;
+  font-size: 15px;
+}
+
+.register__main {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.register__mainText {
+  font-size: 18px;
+}
+
+.register__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1rem;
+}
+
+.register__input {
+  height: 50px;
+  font-size: 16px;
+  padding-left: 0.75rem;
+  background-color: transparent;
+  border: 2px solid rgb(109 45 231);
+  border-radius: 4px;
+  color: white;
+  outline: none;
+}
+
+.register__form .aqua-btn {
+  align-self: flex-end;
+  font-size: 16px;
+  padding: 0.9rem 1.75rem;
+  border-radius: 8px;
+}
+
+.register__switchToLogin {
+  color: white;
+  font-size: 18px;
+  margin-top: 0.75rem;
+}
+
+.register__switchToLogin > span {
+  color: rgb(109 45 231);
+  cursor: pointer;
+}
