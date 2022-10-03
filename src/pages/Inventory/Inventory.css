@@ -41,6 +41,7 @@
   place-items: center;
   font-size: 18px;
   color: white;
+  position: relative;
   cursor: pointer;
 }
 

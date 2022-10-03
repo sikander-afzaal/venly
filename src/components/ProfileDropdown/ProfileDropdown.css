@@ -1,9 +1,8 @@
 .profileDropdown {
   --scale: 0;
 
-  display: flex;
+  display: none;
   position: absolute;
-  transform: translate(-59px, 100px) scaleY(var(--scale));
   background-color: white;
   color: black;
   width: 150px;
@@ -12,11 +11,12 @@
   flex-direction: column;
   transform-origin: top;
   border-radius: 8px;
-  transition: transform 0.15s;
+  top: 150%;
+  right: 0;
 }
 
 .profileDropdown__isActive {
-  --scale: 1;
+  display: flex;
 }
 
 .profileDropdown > span,
