@@ -26,7 +26,7 @@ const Swap = () => {
           </select>
         </div>
       </div>
-      <button className="aqua-btn disabled">Swap Assets</button>
+      <button className="aqua-btn">Swap Assets</button>
     </div>
   );
 };

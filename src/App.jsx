@@ -6,8 +6,6 @@ import EmailVerification from "./pages/EmailVerification/EmailVerification";
 import MasterPin from "./pages/MasterPin/MasterPin";
 import Home from "./pages/Home/Home";
 import Inventory from "./pages/Inventory/Inventory";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Nft from "./pages/Nft/Nft";
 import Tokens from "./pages/Tokens/Tokens";
 import Transaction from "./pages/Transaction/Transaction";
@@ -24,6 +22,8 @@ import Session from "./pages/Session/Session";
 import Application from "./pages/Application/Application";
 import Log from "./pages/Log/Log";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 const App = () => {
   return (
     <Router>
@@ -35,18 +35,8 @@ const App = () => {
         <Route path="/verify" element={<EmailVerification />} />
 
         <Route path="/master-pin" element={<MasterPin />} />
-
-        <Route path="/home" element={<Home />} />
         <Route path="/terms" element={<Terms />} />
-        <Route path="/settings" element={<Settings />}>
-          <Route path="" element={<Account />} />
-          <Route path="password" element={<AccountPwd />} />
-          <Route path="two-factor" element={<TwoFactor />} />
-          <Route path="social" element={<Socials />} />
-          <Route path="session" element={<Session />} />
-          <Route path="application" element={<Application />} />
-          <Route path="log" element={<Log />} />
-        </Route>
+        <Route path="/home" element={<Home />} />
 
         <Route path="/inventory" element={<Inventory />}>
           <Route path="" element={<Nft />} />
@@ -55,6 +45,15 @@ const App = () => {
           <Route path="swap" element={<Swap />} />
           <Route path="activity" element={<Activity />} />
           <Route path="app" element={<Apps />} />
+          <Route path="settings" element={<Settings />}>
+            <Route path="" element={<Account />} />
+            <Route path="password" element={<AccountPwd />} />
+            <Route path="two-factor" element={<TwoFactor />} />
+            <Route path="social" element={<Socials />} />
+            <Route path="session" element={<Session />} />
+            <Route path="application" element={<Application />} />
+            <Route path="log" element={<Log />} />
+          </Route>
         </Route>
       </Routes>
     </Router>

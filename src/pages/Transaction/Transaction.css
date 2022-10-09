@@ -20,12 +20,18 @@
   height: 40px;
   border-radius: 2px;
   font-size: 16px;
-  border: 1px solid black;
+  border: 1px solid rgb(109 45 231);
   padding-left: 10px;
+  background-color: transparent;
+  color: white;
+}
+.input-div input:focus {
+  outline: none;
 }
 .input-div label {
   font-size: 14px;
   font-weight: 400;
+  color: white;
 }
 .input-div > div input {
   border: none;
@@ -36,7 +42,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  border: 1px solid black;
+  border: 1px solid rgb(109 45 231);
 }
 .input-div > div button,
 .input-div > div select {
@@ -44,15 +50,16 @@
   height: 40px;
   border: none;
   cursor: pointer;
-  background-color: black;
+  background-color: rgb(109 45 231);
   color: white;
   font-size: 16px;
 }
+
 .transaction-page .aqua-btn {
   width: 300px;
   height: 40px;
   font-size: 17px;
-  border: 1px solid white;
+  border: 1px solid none;
   margin-top: 20px;
 }
 .note {

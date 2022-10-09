@@ -19,10 +19,11 @@
   font-size: 14px;
 }
 .session table td {
-  background-color: #ccc;
+  background-color: rgb(109 45 231);
   height: 50px;
   padding-left: 10px;
   font-size: 14px;
+  color: white;
 }
 .session .aqua-btn {
   width: 200px;
@@ -30,7 +31,7 @@
   border-radius: 10px;
   height: 40px;
 }
-@media screen and (max-width: 610px) {
+@media screen and (max-width: 1226px) {
   .session table {
     min-width: 1000px;
   }

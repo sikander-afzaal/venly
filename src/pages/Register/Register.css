@@ -83,16 +83,6 @@
   color: black;
 }
 
-.register__metamask {
-  background-color: rgba(255, 204, 0, 255);
-  color: black;
-}
-
-.register__trustwallet {
-  background-color: #007bff;
-  color: white;
-}
-
 .register__topText {
   color: white;
   margin-inline: auto;
@@ -109,6 +99,9 @@
 
 .register__mainText {
   font-size: 18px;
+  color: white;
+  align-self: flex-start;
+  margin-top: 30px;
 }
 
 .register__form {

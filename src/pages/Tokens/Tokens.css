@@ -10,6 +10,7 @@
 .token-page h1 {
   font-size: 20px;
   font-weight: 700;
+  color: white;
 }
 .token-page h1 span {
   font-weight: 600;
@@ -30,4 +31,5 @@
 }
 .bottom-token h2 {
   font-size: 18px;
+  color: white;
 }

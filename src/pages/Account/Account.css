@@ -14,7 +14,11 @@
   align-items: center;
 }
 .account .row h1 {
+  color: white;
   font-size: 34px;
+}
+.input-div strong {
+  color: white;
 }
 .btn-div {
   display: flex;
@@ -30,11 +34,13 @@
   font-size: 18px;
 }
 .btn-div .inverse {
+  color: white;
   background-color: transparent;
   border: 2px solid rgb(109 45 231);
 }
 .btn-div .inverse:hover {
   background-color: rgb(109 45 231);
+  color: white;
 }
 @media screen and (max-width: 500px) {
   .account .row h1 {
